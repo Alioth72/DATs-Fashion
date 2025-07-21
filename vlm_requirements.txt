@@ -1,0 +1,23 @@
+# Enhanced Fashion Recommender with VLM Support
+# Install these packages for the Vision-Language Model integration
+
+# Core dependencies (existing)
+torch>=1.9.0
+torchvision>=0.10.0
+pillow>=8.0.0
+numpy>=1.21.0
+scikit-learn>=1.0.0
+opencv-python>=4.5.0
+
+# Sentence transformers for text encoding
+sentence-transformers>=2.2.0
+
+# Vision-Language Model dependencies
+transformers>=4.20.0
+accelerate>=0.20.0
+
+# Optional: For better performance
+# torch-geometric  # Uncomment if you want full GAT support
+
+# Development dependencies
+requests>=2.25.0
