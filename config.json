@@ -1,0 +1,38 @@
+{
+    "app_config": {
+        "title": "AI Fashion Recommender",
+        "icon": "👗",
+        "layout": "wide",
+        "sidebar_state": "expanded"
+    },
+    "paths": {
+        "cloth_images": "train/cloth",
+        "metadata_file": "vitonhd_train_tagged.json",
+        "model_file": "gat_model.pth"
+    },
+    "model_config": {
+        "gat_enabled": true,
+        "fallback_enabled": true,
+        "image_size": [224, 224],
+        "feature_dimensions": 384,
+        "gat_hidden_dim": 256,
+        "gat_output_dim": 128,
+        "gat_heads": 4
+    },
+    "ui_config": {
+        "templates_count": 30,
+        "default_recommendations": 9,
+        "max_recommendations": 15,
+        "grid_columns": 4
+    },
+    "search_config": {
+        "text_vectorizer_features": 1000,
+        "similarity_threshold": 0.0,
+        "enable_semantic_search": true
+    },
+    "performance": {
+        "cache_enabled": true,
+        "gpu_enabled": true,
+        "batch_processing": false
+    }
+}
